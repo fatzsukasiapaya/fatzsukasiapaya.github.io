@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Confess Untuk Kamu</title>
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+.card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    max-width:400px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+button{
+    padding:10px 20px;
+    margin:10px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+.yes{background:#4CAF50;color:white;}
+.no{background:#f44336;color:white;}
+</style>
+</head>
+<body>
+
+<div class="card">
+<h1>Hai Kamu ❤️</h1>
+<p>Aku mau jujur sesuatu...</p>
+<p>Maukah kamu jadi orang spesialku?</p>
+
+<button class="yes" onclick="jawabYa()">Mau</button>
+<button class="no" onclick="jawabTidak()">Tidak</button>
+
+<p id="hasil"></p>
+<br>
+<small>Created by FatzSukaSiapaYa</small>
+</div>
+
+<script>
+function jawabYa(){
+    document.getElementById("hasil").innerHTML =
+    "Makasih udah nerima ❤️";
+}
+function jawabTidak(){
+    document.getElementById("hasil").innerHTML =
+    "Gapapa kok, tetap semangat 😊";
+}
+</script>
+
+</body>
+</html>
